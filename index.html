@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>File Tree Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>File Tree Builder</h1>
+
+<div class="controls">
+  <input id="name" placeholder="name">
+  <select id="type">
+    <option value="file">file</option>
+    <option value="folder">folder</option>
+  </select>
+  <button onclick="addNode()">Add</button>
+  <button onclick="goRoot()">Root</button>
+  <button onclick="exportASCII()">Export</button>
+</div>
+
+<div id="currentPath">Current folder: / (root)</div>
+
+<div id="tree" class="tree"></div>
+
+<div id="asciiOut"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
